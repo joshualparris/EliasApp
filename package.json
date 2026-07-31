@@ -4,9 +4,10 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 5180 --strictPort",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview --port 5180 --strictPort",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -14,6 +15,7 @@
     "react-router-dom": "^6.18.2"
   },
   "devDependencies": {
+    "@playwright/test": "^1.62.1",
     "@vitejs/plugin-react": "^4.3.1",
     "vite": "^5.4.1"
   }

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Long screwdriver illustration">
+  <rect width="640" height="480" rx="42" fill="#ffe8cc"/>
+  <circle cx="504" cy="112" r="50" fill="#cab8ff"/>
+  <path d="M156 360 456 60l46 46-300 300z" fill="#617483"/>
+  <path d="M452 52h92v32h-92zM482 22h32v92h-32z" fill="#405463"/>
+  <rect x="92" y="348" width="160" height="78" rx="39" transform="rotate(-45 172 387)" fill="#ffbd73"/>
+  <path d="M120 386h94" stroke="#fff" stroke-width="16" stroke-linecap="round"/>
+</svg>

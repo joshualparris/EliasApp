@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Electric screwdriver illustration">
+  <rect width="640" height="480" rx="42" fill="#eee8ff"/>
+  <circle cx="506" cy="110" r="50" fill="#9de9df"/>
+  <path d="M226 246h202v72H226z" fill="#5b7080"/>
+  <path d="M418 262h92v40h-92z" fill="#405463"/>
+  <path d="M236 306h84l-38 106h-72z" fill="#cab8ff"/>
+  <rect x="132" y="226" width="124" height="112" rx="32" fill="#ffbd73"/>
+  <circle cx="276" cy="282" r="18" fill="#ffe07a"/>
+</svg>

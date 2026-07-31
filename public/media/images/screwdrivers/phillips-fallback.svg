@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Phillips screwdriver illustration">
+  <rect width="640" height="480" rx="42" fill="#fff4c2"/>
+  <circle cx="120" cy="98" r="54" fill="#9de9df"/>
+  <path d="M222 310 418 114l54 54-196 196z" fill="#5b7080"/>
+  <path d="M408 104h96v36h-96zM438 74h36v96h-36z" fill="#405463"/>
+  <rect x="124" y="300" width="168" height="82" rx="41" transform="rotate(-45 208 341)" fill="#ffbd73"/>
+  <path d="M150 342h108" stroke="#fff" stroke-width="18" stroke-linecap="round"/>
+</svg>

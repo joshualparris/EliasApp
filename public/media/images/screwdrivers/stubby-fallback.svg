@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Stubby screwdriver illustration">
+  <rect width="640" height="480" rx="42" fill="#dcf8e4"/>
+  <circle cx="126" cy="112" r="48" fill="#ffc4df"/>
+  <path d="M260 292 394 158l50 50-134 134z" fill="#5b7080"/>
+  <path d="M390 150h86v34h-86zM416 124h34v86h-34z" fill="#405463"/>
+  <rect x="158" y="300" width="138" height="94" rx="47" transform="rotate(-45 227 347)" fill="#a7e8bd"/>
+  <path d="M190 348h70" stroke="#fff" stroke-width="18" stroke-linecap="round"/>
+</svg>

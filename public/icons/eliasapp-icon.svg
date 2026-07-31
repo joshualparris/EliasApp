@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="EliasApp icon">
+  <rect width="512" height="512" rx="112" fill="#ffe07a"/>
+  <circle cx="110" cy="118" r="52" fill="#79c7ff"/>
+  <circle cx="405" cy="126" r="42" fill="#a7e8bd"/>
+  <rect x="86" y="292" width="340" height="76" rx="38" fill="#5b6870"/>
+  <rect x="136" y="220" width="206" height="96" rx="28" fill="#ff9b8f"/>
+  <rect x="288" y="244" width="76" height="72" rx="18" fill="#79c7ff"/>
+  <circle cx="174" cy="372" r="38" fill="#20313f"/>
+  <circle cx="342" cy="372" r="38" fill="#20313f"/>
+  <path d="M164 156 306 298" stroke="#20313f" stroke-width="34" stroke-linecap="round"/>
+  <path d="M306 298 370 234" stroke="#20313f" stroke-width="34" stroke-linecap="round"/>
+  <path d="M346 218h70" stroke="#20313f" stroke-width="24" stroke-linecap="round"/>
+</svg>

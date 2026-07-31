@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Toy screwdriver illustration">
+  <rect width="640" height="480" rx="42" fill="#ffe2ef"/>
+  <circle cx="130" cy="108" r="50" fill="#ffe07a"/>
+  <path d="M226 318 420 124l50 50-194 194z" fill="#7b8b96"/>
+  <path d="M414 118h92v32h-92zM444 88h32v92h-32z" fill="#50626f"/>
+  <rect x="120" y="304" width="176" height="90" rx="45" transform="rotate(-45 208 349)" fill="#ff9b8f"/>
+  <circle cx="198" cy="350" r="18" fill="#fff"/>
+</svg>

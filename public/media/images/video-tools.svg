@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180">
+  <rect width="320" height="180" rx="24" fill="#fff1d5" />
+  <path d="M70 120h180v18c0 8-6 14-14 14H84c-8 0-14-6-14-14v-18Z" fill="#d8b076" />
+  <path d="M146 42h28v74h-28z" fill="#8b5d2f" />
+  <path d="M134 42h56l-14-22H148l-14 22Z" fill="#5a3e22" />
+  <text x="50%" y="48" font-size="56" text-anchor="middle" dominant-baseline="middle">🔧</text>
+</svg>

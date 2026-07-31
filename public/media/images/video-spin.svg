@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180">
+  <rect width="320" height="180" rx="24" fill="#f4f0ff" />
+  <circle cx="160" cy="90" r="54" fill="#8c7ce3" opacity="0.2" />
+  <circle cx="160" cy="90" r="28" fill="#6a53ad" />
+  <path d="M160 36v24M160 144v24M116 90H92M228 90h-24" stroke="#fff" stroke-width="10" stroke-linecap="round" />
+  <text x="50%" y="114" font-size="42" text-anchor="middle" dominant-baseline="middle">⚙️</text>
+</svg>

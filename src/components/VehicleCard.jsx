@@ -1,42 +1,67 @@
 import { useState } from 'react';
 import BigButton from './BigButton.jsx';
+import FeedbackBubble from './FeedbackBubble.jsx';
 import MediaImage from './MediaImage.jsx';
 
-const colors = ['coral', 'sky', 'sun', 'mint'];
+const colorClasses = ['paint-red', 'paint-blue', 'paint-yellow', 'paint-green'];
 
 export default function VehicleCard({ vehicle, muted, playTone }) {
   const [lights, setLights] = useState(false);
-  const [spin, setSpin] = useState(false);
-  const [colorIndex, setColorIndex] = useState(0);
+  const [spinning, setSpinning] = useState(false);
+  const [paintIndex, setPaintIndex] = useState(0);
+  const [message, setMessage] = useState(vehicle.fact);
+
+  function horn() {
+    playTone(vehicle.soundPitch || 430);
+    setMessage(muted ? 'Sound is off, but the horn button still works.' : `${vehicle.sound || 'beep'}!`);
+  }
 
   return (
-    <article className={`item-card vehicle-shell ${colors[colorIndex]}`}>
-      <div className="vehicle-stage">
-        <MediaImage src={vehicle.image} alt={vehicle.name} emoji={vehicle.emoji} />
-        <div className={`headlights ${lights ? 'on' : ''}`} aria-hidden="true" />
-        <button
-          className={`wheel wheel-left ${spin ? 'spinning' : ''}`}
-          onClick={() => setSpin((value) => !value)}
-          aria-label={`Spin ${vehicle.name} wheels`}
-        />
-        <button
-          className={`wheel wheel-right ${spin ? 'spinning' : ''}`}
-          onClick={() => setSpin((value) => !value)}
-          aria-label={`Spin ${vehicle.name} wheels`}
-        />
+    <article className={`vehicle-card ${colorClasses[paintIndex]}`}>
+      <div className="vehicle-art">
+        <MediaImage src={vehicle.image} alt={vehicle.title} emoji={vehicle.emoji} />
+        <div className={`vehicle-glow ${lights ? 'on' : ''}`} aria-hidden="true" />
+        <div className="vehicle-wheels" aria-hidden="true">
+          {Array.from({ length: Math.min(vehicle.wheels, 8) }).map((_, index) => (
+            <span key={index} className={`tiny-wheel ${spinning ? 'spinning' : ''}`} />
+          ))}
+        </div>
       </div>
-      <h3>{vehicle.name}</h3>
-      <div className="button-row">
-        <BigButton onClick={() => playTone(vehicle.sound)} aria-label={`Beep ${vehicle.name} horn`}>
-          {muted ? 'Muted' : 'Beep'}
-        </BigButton>
-        <BigButton onClick={() => setLights((value) => !value)} aria-label={`Toggle ${vehicle.name} lights`}>
+      <div>
+        <h3>{vehicle.title}</h3>
+        <p>{vehicle.description}</p>
+      </div>
+      <div className="action-row compact">
+        <BigButton onClick={horn} aria-label={`Honk ${vehicle.title} horn`}>Horn</BigButton>
+        <BigButton
+          onClick={() => {
+            setLights((value) => !value);
+            setMessage(lights ? 'Lights off.' : 'Headlights on!');
+          }}
+          aria-label={`Toggle ${vehicle.title} headlights`}
+        >
           Lights
         </BigButton>
-        <BigButton onClick={() => setColorIndex((value) => (value + 1) % colors.length)} aria-label={`Change ${vehicle.name} colour`}>
+        <BigButton
+          onClick={() => {
+            setSpinning((value) => !value);
+            setMessage(spinning ? 'Wheels slowed down.' : 'Wheels are spinning.');
+          }}
+          aria-label={`Spin ${vehicle.title} wheels`}
+        >
+          Wheels
+        </BigButton>
+        <BigButton
+          onClick={() => {
+            setPaintIndex((value) => (value + 1) % colorClasses.length);
+            setMessage('New workshop colour!');
+          }}
+          aria-label={`Change ${vehicle.title} colour`}
+        >
           Colour
         </BigButton>
       </div>
+      <FeedbackBubble>{message}</FeedbackBubble>
     </article>
   );
 }

@@ -1,0 +1,17 @@
+{
+  "name": "EliasApp",
+  "short_name": "EliasApp",
+  "description": "A safe toddler play app for trucks, tools, cars and building fun.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7fbff",
+  "theme_color": "#ffe07a",
+  "icons": [
+    {
+      "src": "/icons/eliasapp-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -43,7 +43,17 @@ export default function ParentSettings({ settings, achievements, onSettingChange
           <p className="prompt-text">{parentPrompts[promptIndex % parentPrompts.length]}</p>
           <BigButton onClick={() => setPromptIndex((i) => i + 1)}>Next prompt</BigButton>
         </div>
-        <div className="settings-actions">
+        
+        <div className="guidance-panel" style={{ background: 'rgba(60, 120, 100, 0.1)', padding: '16px', borderRadius: '8px', marginTop: '16px', borderLeft: '4px solid #64c8a0' }}>
+          <h3 style={{ margin: '0 0 8px 0', fontSize: '1.1rem', color: '#64c8a0' }}>🛡️ Safety & Co-play Guidance</h3>
+          <ul style={{ margin: 0, paddingLeft: '20px', color: '#aab5c6', fontSize: '0.9rem', lineHeight: '1.5' }}>
+            <li><strong>Keep it short:</strong> Sessions are tracked and capped at 10 minutes.</li>
+            <li><strong>Play together:</strong> Use the prompts to guide real-world interaction.</li>
+            <li><strong>Low arousal:</strong> This app uses calm colors, no autoplay, and no fast cuts.</li>
+          </ul>
+        </div>
+
+        <div className="settings-actions" style={{ marginTop: '16px' }}>
           <BigButton onClick={onOpenResources}>Open parent resources</BigButton>
           <BigButton onClick={onResetAchievements}>Reset achievements</BigButton>
         </div>

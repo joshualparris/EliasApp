@@ -35,6 +35,7 @@ import { houseElements } from './data/houseGame.js';
 import SoundMemoryGame from './components/SoundMemoryGame.jsx';
 import PaintVehiclesGame from './components/PaintVehiclesGame.jsx';
 import { memoryCards, paintColors } from './data/miniGames.js';
+import { vocabularyMap } from './data/vocabulary.js';
 
 const pageMap = Object.fromEntries(sections.map((section) => [section.id, section]));
 const defaultSettings = {
@@ -388,6 +389,7 @@ export default function App() {
       {page === 'house' && <BuildHousePage playTone={playTone} addAchievement={addAchievement} />}
       {page === 'memory' && <MemoryGamePage playTone={playTone} addAchievement={addAchievement} />}
       {page === 'paint' && <PaintGamePage playTone={playTone} addAchievement={addAchievement} />}
+      {page === 'vocabulary' && <VocabularyPage playTone={playTone} addAchievement={addAchievement} />}
       {page === 'resources' && <ParentResources links={parentResources} onBack={handleBack} />}
       <ParentSettings
         settings={settings}

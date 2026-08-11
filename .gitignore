@@ -6,3 +6,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 *.log
+build/
+playwright-report/
+test-results/
+.env
+.last-run.json
+coverage/

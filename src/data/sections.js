@@ -104,4 +104,11 @@ export const sections = [
     theme: 'theme-red',
     description: 'Pick colors and paint vehicles bright and fun.',
   },
+  {
+    id: 'vocabulary',
+    title: 'Vocabulary Cards',
+    emoji: '🗣️',
+    theme: 'theme-purple',
+    description: 'Practice naming trucks, tools, colors, and sounds together.',
+  },
 ];
